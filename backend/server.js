@@ -1,0 +1,23 @@
+require("dotenv").config(); // Load environment variables
+const express = require("express");
+const axios = require("axios");
+const cors = require("cors");
+
+const app = express();
+app.use(cors());
+
+app.get("/news", async (req, res) => {
+  const category = req.query.category || "general";
+  const apiKey = process.env.NEWS_API_KEY; // Load API key from .env
+
+  const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=us&apiKey=${apiKey}`;
+
+  try {
+    const response = await axios.get(url);
+    res.json(response.data); // Send fetched news data to frontend
+  } catch (error) {
+    res.status(500).json({ error: "Error fetching news" });
+  }
+});
+
+app.listen(5000, () => console.log("Backend running on port 5000"));
