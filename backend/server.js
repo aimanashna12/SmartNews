@@ -1,4 +1,4 @@
-require("dotenv").config(); // Load environment variables
+require("dotenv").config(); 
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
@@ -8,13 +8,13 @@ app.use(cors());
 
 app.get("/news", async (req, res) => {
   const category = req.query.category || "general";
-  const apiKey = process.env.NEWS_API_KEY; // Load API key from .env
+  const apiKey = process.env.NEWS_API_KEY; 
 
   const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=us&apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
-    res.json(response.data); // Send fetched news data to frontend
+    res.json(response.data);
   } catch (error) {
     res.status(500).json({ error: "Error fetching news" });
   }
