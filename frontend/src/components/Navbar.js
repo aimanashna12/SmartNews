@@ -19,11 +19,6 @@ const Navbar = ({ darkMode }) => {
         <div className="tabs"><Link to="/">Home</Link></div>
         <div className="tabs"><Link to="/favorites">Favourites</Link></div>
       </ul>
-      {/* <div className="navbar-right">
-        <button className="search-btn">🔍</button>
-        <Link to="/login" className="login">Log in</Link>
-        <button className="signup-btn">Sign up</button>
-      </div> */}
     </nav>
   );
 };
