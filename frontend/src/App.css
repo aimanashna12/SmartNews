@@ -85,7 +85,6 @@ button:hover {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-  transition: background 0.3s;
 }
 
 .news-card:hover {
