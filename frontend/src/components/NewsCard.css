@@ -53,7 +53,7 @@
 }
 
 .dark-mode .news-card p{
-  color: white;
+  color: grey;
 }
 .dark-mode .news-card a{
   color: white;
@@ -70,4 +70,6 @@
 .share-options {
   margin-top: 0.5rem;
 }
-  
+.platform {
+  margin-right: 0.5rem;
+} 

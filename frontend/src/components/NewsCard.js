@@ -78,9 +78,9 @@ const NewsCard = ({ article }) => {
         </button>
         {showShareOptions && (
           <div className="share-options">
-            <button onClick={() => shareArticle("whatsapp")}>WhatsApp</button>
-            <button onClick={() => shareArticle("linkedin")}>LinkedIn</button>
-            <button onClick={() => shareArticle("facebook")}>Facebook</button>
+            <button className="platform" onClick={() => shareArticle("whatsapp")}>WhatsApp</button>
+            <button className="platform" onClick={() => shareArticle("linkedin")}>LinkedIn</button>
+            <button className="platform" onClick={() => shareArticle("facebook")}>Facebook</button>
           </div>
         )}
       </div>

@@ -8,6 +8,8 @@ app.use(cors());
 
 app.get("/news", async (req, res) => {
   const category = req.query.category || "general";
+  const page = req.query.page || 1; 
+  const pageSize = 10; 
   const apiKey = process.env.NEWS_API_KEY; 
 
   const url = `https://newsapi.org/v2/top-headlines?category=${category}&country=us&apiKey=${apiKey}`;
