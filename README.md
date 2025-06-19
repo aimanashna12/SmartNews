@@ -8,5 +8,6 @@
 
 - **Frontend**: React.js, CSS
 - **Backend**: Node.js, Express.js
+- **API**: Hugging face, NewsAPI
 
 
