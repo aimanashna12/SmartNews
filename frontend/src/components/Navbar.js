@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/image.png"
 import "./Navbar.css";
-// import Favorites from "./components/Favorites";
 
 const Navbar = ({ darkMode }) => {
   return (

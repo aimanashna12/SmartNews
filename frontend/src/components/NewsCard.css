@@ -73,3 +73,31 @@
 .platform {
   margin-right: 0.5rem;
 } 
+.box{
+  display: flex;
+  justify-content:space-around;
+}
+.summary-container {
+  margin-top: 10px;
+}
+
+
+.summary-container {
+  margin-top: 10px;
+}
+
+.summary-btn {
+  /* background-color: #0066cc; */
+  color: black;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.summary-text {
+  margin-top: 8px;
+  font-style: italic;
+}
+
